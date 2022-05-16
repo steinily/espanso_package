@@ -35,64 +35,64 @@ matches:
   - trigger: ':flexparent'
     label: "Css Flex Parent"
     replace: |
-                  'display : flex;         /*flex || inline-flex*/\n
-                  /*flex-direction :  ;*/  /* row || column || column-reverse || row-reverse|| */\n
-                  /*justify-content: ;*/   /* flex-start || flex-end || center || space-between ||space-around || space-evenly*/\n
-                  /*align-items: ;*/       /* flex-start|| flex-end || center || stretch || baseline */\n
-                  /*align-content: ;*/     /* flex-start || flex-end || center */\n
-                  /*flex-wrap: ;*/         /* nowrap || wrap || wrap-reverse */\n'
+                  'display : flex;         /*flex || inline-flex*/ 
+                  /*flex-direction :  ;*/  /* row || column || column-reverse || row-reverse|| */ 
+                  /*justify-content: ;*/   /* flex-start || flex-end || center || space-between ||space-around || space-evenly*/ 
+                  /*align-items: ;*/       /* flex-start|| flex-end || center || stretch || baseline */ 
+                  /*align-content: ;*/     /* flex-start || flex-end || center */ 
+                  /*flex-wrap: ;*/         /* nowrap || wrap || wrap-reverse */ '
 
   - trigger: ':flexchildren'
     label: "Css Flex Children"
     replace: |
-                '/*order: ;*/              /* any positive value */\n
-                /*flex-grow: ;*/           /* any positive value */\n
-                /*flex-shrink: ;*/         /* any positive value */\n
-                /*flex-basis: ;*/          /*Defines the size of an element before remaining space is distributed.*/\n
-                /*align-self: ;*/          /* auto || flex-start || flex-end || center || baseline || strech*/\n
+                '/*order: ;*/              /* any positive value */ 
+                /*flex-grow: ;*/           /* any positive value */ 
+                /*flex-shrink: ;*/         /* any positive value */ 
+                /*flex-basis: ;*/          /*Defines the size of an element before remaining space is distributed.*/ 
+                /*align-self: ;*/          /* auto || flex-start || flex-end || center || baseline || strech*/ 
 
 
   - trigger: ':gridparent'
     label: "Css Grid Parent"
     replace: |
-                '/*parent properties*/\n
-                display: grid;                /* grid || inline-grid || subgrid */\n
-                /*grid-template-columns: ;*/  /*Defines the rows and columns of the grid.*/\n
-                /*grid-template-rows: ;*/     /*Defines the rows and columns of the grid.*/\n
-                /*grid-template-areas: ;*/    /* grid cell should carry in terms of columns and rows across the parent container. */\n
-                /*grid-template: ;*/          /* shorthand property */\n
-                /*grid-gap: ;*/               /*Specifies the size of column and row gutters*/\n
-                /*justify-items: ;*/          /*Aligns content in a grid item along the row axis || start || end || center ||stretch */\n
-                /*align-items: ;*/            /*Aligns content in a grid item along the column axis. || start || end || center ||stretch */\n
-                /*justify-content: ;*/        /* start || end || center || space-between ||space-around || space-evenly*/\n
-                /*align-content: ;*/          /* start || end || center || space-between ||space-around || space-evenly*/\n
-                /*grid-auto-flow: ;*/         /*Algorithm for automatically placing grid items that aren't explictly placed.  || row || column || dense*/\n'
+                '/*parent properties*/ 
+                display: grid;                /* grid || inline-grid || subgrid */ 
+                /*grid-template-columns: ;*/  /*Defines the rows and columns of the grid.*/ 
+                /*grid-template-rows: ;*/     /*Defines the rows and columns of the grid.*/ 
+                /*grid-template-areas: ;*/    /* grid cell should carry in terms of columns and rows across the parent container. */ 
+                /*grid-template: ;*/          /* shorthand property */ 
+                /*grid-gap: ;*/               /*Specifies the size of column and row gutters*/ 
+                /*justify-items: ;*/          /*Aligns content in a grid item along the row axis || start || end || center ||stretch */ 
+                /*align-items: ;*/            /*Aligns content in a grid item along the column axis. || start || end || center ||stretch */ 
+                /*justify-content: ;*/        /* start || end || center || space-between ||space-around || space-evenly*/ 
+                /*align-content: ;*/          /* start || end || center || space-between ||space-around || space-evenly*/ 
+                /*grid-auto-flow: ;*/         /*Algorithm for automatically placing grid items that aren't explictly placed.  || row || column || dense*/ '
 
   - trigger: ':gridchild'
     label: "Css Grid Child"
     replace: |
-                '/*grid-column-start: ;*/     /*Determines an items column-based location within the grid.*/\n
-                /*grid-column-end: ;*/        /*Determines an items column-based location within the grid.*/\n
-                /*grid-column: ;*/            /*shorthand prop*/\n
-                /*grid-row-start: ;*/         /*Determines an items row-based location within the grid.*/\n
-                /*grid-row-end: ;*/           /*Determines an items row-based location within the grid.*/\n
-                /*grid-row: ;*/               /*shorthand prop*/\n
-                /*justify-self: ;*/           /*Aligns content for a specific grid item along the row axis.  || start || end || center ||stretch */\n
-                /*align-self: ;*/             /*Aligns content for a specific grid item along the column axis.  || start || end || center ||stretch */\n'
+                '/*grid-column-start: ;*/     /*Determines an items column-based location within the grid.*/ 
+                /*grid-column-end: ;*/        /*Determines an items column-based location within the grid.*/ 
+                /*grid-column: ;*/            /*shorthand prop*/ 
+                /*grid-row-start: ;*/         /*Determines an items row-based location within the grid.*/ 
+                /*grid-row-end: ;*/           /*Determines an items row-based location within the grid.*/ 
+                /*grid-row: ;*/               /*shorthand prop*/ 
+                /*justify-self: ;*/           /*Aligns content for a specific grid item along the row axis.  || start || end || center ||stretch */ 
+                /*align-self: ;*/             /*Aligns content for a specific grid item along the column axis.  || start || end || center ||stretch */ '
 
 #Text Properties
 
   - trigger: ':text'
     label: "Css Text"
     replace: |
-              'color: ;               /* Sets the color of a tex || RGB, hex, keywordt*/\n
-              /*line-height: ;*/      /* Sets the distance between lines || normal, number, length, %*/\n
-              /*letter-spacing: ;*/   /* Increase or decrease the space between characters  || normal, length*/\n
-              /*text-align: ;*/       /* Aligns the text in an element || left, right, center, justify */\n
-              /*text-decoration: ;*/  /*Adds decoration to text || none, underline, overline, line-through */\n
-              /*text-indent: ;*/      /*Indents the first line of text in an element || length, % */\n
-              /*text-transform: ;*/   /*Controls the letters in an element || none, capitalize, uppercase, lowercase */\n
-              /*text-shadow: ;*/      /*The text-shadow property adds shadow to text.*/\n'
+              'color: ;               /* Sets the color of a tex || RGB, hex, keywordt*/ 
+              /*line-height: ;*/      /* Sets the distance between lines || normal, number, length, %*/ 
+              /*letter-spacing: ;*/   /* Increase or decrease the space between characters  || normal, length*/ 
+              /*text-align: ;*/       /* Aligns the text in an element || left, right, center, justify */ 
+              /*text-decoration: ;*/  /*Adds decoration to text || none, underline, overline, line-through */ 
+              /*text-indent: ;*/      /*Indents the first line of text in an element || length, % */ 
+              /*text-transform: ;*/   /*Controls the letters in an element || none, capitalize, uppercase, lowercase */ 
+              /*text-shadow: ;*/      /*The text-shadow property adds shadow to text.*/ '
 
 #Font Properties
 
@@ -100,9 +100,9 @@ matches:
     label: "Css Font"
     replace: |
                 '
-                /*font-family: ;*/    /*Specifies the font family for text ||  	family-name, generic-family, inherit*/\n
-                /*font-size: ;*/      /* 	Specifies the font size of text || xx-small, x-small, small, medium, large, x-large, xx-large, smaller, larger, length, %, inherit*/\n
-                /*font-style: ;*/     /* 	Specifies the font style for text || normal, italic, oblique, inherit*/\n
-                /*font-variant: ;*/   /* 	Specifies whether or not a text should be displayed in a small-caps font || normal, small-caps, inherit*/\n
-                /*font-weight: ;*/    /* Specifies the weight of a font ||normal, bold, bolder, lighter,100 etc */\n
+                /*font-family: ;*/    /*Specifies the font family for text ||  	family-name, generic-family, inherit*/ 
+                /*font-size: ;*/      /* 	Specifies the font size of text || xx-small, x-small, small, medium, large, x-large, xx-large, smaller, larger, length, %, inherit*/ 
+                /*font-style: ;*/     /* 	Specifies the font style for text || normal, italic, oblique, inherit*/ 
+                /*font-variant: ;*/   /* 	Specifies whether or not a text should be displayed in a small-caps font || normal, small-caps, inherit*/ 
+                /*font-weight: ;*/    /* Specifies the weight of a font ||normal, bold, bolder, lighter,100 etc */ 
                 '
