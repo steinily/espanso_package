@@ -1,0 +1,7 @@
+author: Hencz Istvan
+description: A simple package to make coding in Css easier.
+name: css-utils-package
+title: Css utilities package
+version: 0.0.1
+homepage: ""
+tags: ["frontend", "html", "development"]
