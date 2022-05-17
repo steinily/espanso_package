@@ -106,3 +106,11 @@ matches:
                 /*font-variant: ;*/   /* 	Specifies whether or not a text should be displayed in a small-caps font || normal, small-caps, inherit*/ 
                 /*font-weight: ;*/    /* Specifies the weight of a font ||normal, bold, bolder, lighter,100 etc */ 
                 '
+
+#box shadow
+  -trigger: ':boxshadow'
+    label: "Box Shadow"
+    replace: |
+                  '
+                  box-shadow: ; /* offset-x offset-y blur-radius spread-radius color | multiple shadow is possible */
+                  '
