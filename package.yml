@@ -114,3 +114,7 @@ matches:
                   '
                   box-shadow: ; /* offset-x offset-y blur-radius spread-radius color | multiple shadow is possible */
                   '
+#bash
+  -trigger: ':bash'
+    label: 'Bash Shebang' 
+    replace: '#!/usr/bin/env bash'
