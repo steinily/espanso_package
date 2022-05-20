@@ -30,6 +30,10 @@ matches:
     label: "back tick"
     replace: '`'
 
+  - trigger: ':star' 
+    label: 'Star char'
+    replace: '*'
+
 #CSS Commands
 
   - trigger: ':flexparent'
