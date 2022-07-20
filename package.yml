@@ -28,9 +28,9 @@ matches:
 
   - trigger: ':btick'
     label: "back tick"
-    replace: '`'
+    replace: '``'
 
-  - trigger: ':star' 
+  - trigger: ':-' 
     label: 'Star char'
     replace: '*'
 
@@ -121,4 +121,14 @@ matches:
 #bash
   - trigger: ':bash'
     label: 'Bash Shebang' 
-    replace: '#!/usr/bin/env bash'
+
+
+#React Js 
+
+  -trigger: ':arrow'
+   label: 'Js arrow function'
+   replace: |
+              '
+              =>
+              '
+              
